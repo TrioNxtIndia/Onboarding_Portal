@@ -1,0 +1,45 @@
+
+<mat-card class="example-card">
+    <div class="d-flex justify-content-end m-3 p-4">
+        <button mat-raised-button color="primary" routerLink="/list"><mat-icon>arrow_forward</mat-icon>Back to List</button>
+    </div>
+    
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title style="font-size: 20px; font-weight: bold;">{{(customerDetail && customerDetail.name)}}</mat-card-title>
+      <mat-card-subtitle>{{customerDetail.email}}</mat-card-subtitle>
+    </mat-card-header>
+    
+    <mat-card-content>
+      
+    </mat-card-content>
+    <mat-card-actions>
+        <mat-list role="list">
+            <h6>Contact Details-</h6>
+            <mat-list-item matLine>
+                Mobile Number:  
+                <mat-chip>{{customerDetail.mobile}}</mat-chip>
+            </mat-list-item> <br>
+            <h6>Sale Contact Person-</h6>
+            <mat-list-item matLine>
+                SCP Name: 
+                <mat-chip>{{customerDetail.sale_contact}}</mat-chip>
+            </mat-list-item> <br>
+            <h6>Project Details-</h6>
+            <mat-list-item matLine>
+                Project Name: 
+                <mat-chip>{{customerDetail.project}}</mat-chip>
+            </mat-list-item> 
+            <mat-list-item matLine>
+                Contract Status: 
+                <mat-chip>{{customerDetail.status}}</mat-chip>
+            </mat-list-item> 
+            <mat-list-item matLine>
+                Expected Go Live date: 
+                <mat-chip>{{customerDetail.golivedate}}</mat-chip>
+            </mat-list-item> 
+          </mat-list>
+          
+    </mat-card-actions>
+  </mat-card>
+
