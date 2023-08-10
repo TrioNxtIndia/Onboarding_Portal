@@ -1,1 +1,20 @@
 # Onboarding_Portal
+
+## Versions Used 
+Angular Version - **16.1.0** <br />
+Node Version - **18.16.0** <br />
+MySQL Version - **8.0.33** <br />
+
+### Prerequisite Changes
+1. Create a Database for eg. customer
+2. Open Config folder from ***Express*** -> open ***database.js*** and update the MySQL creadentials as per your's
+
+## Commands to run Angular & Express
+
+```
+npm install
+```
+```
+npm start
+```
+
