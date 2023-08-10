@@ -7,7 +7,7 @@ MySQL Version - **8.0.33** <br />
 
 ### Prerequisite Changes
 1. Create a Database for eg. customer
-2. Open Config folder from ***Express*** -> open ***database.js*** and update the MySQL creadentials as per your's
+2. Open &nbsp;***Config***&nbsp; folder from &nbsp;***server-side***&nbsp; open  &nbsp;***database.js***&nbsp; and update the MySQL creadentials as per your's
 
 ## Commands to run Angular & Express
 
