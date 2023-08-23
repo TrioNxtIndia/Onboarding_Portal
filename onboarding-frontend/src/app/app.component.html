@@ -1,0 +1,34 @@
+<mat-toolbar color="primary">
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon"(click)="drawer.toggle()">
+    <mat-icon class="mb-1">menu</mat-icon>
+  </button>
+  <span style="font-size: 18px;">Onboarding Portal</span>
+  <span class="example-spacer"></span>
+  <button mat-button><mat-icon>person</mat-icon></button>
+</mat-toolbar>
+
+
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+
+    <div class="sidebar">
+      <button (click)="project()" mat-raised-button><mat-icon>assignment</mat-icon>
+          Project
+        </button>
+        <button (click)="customer()" mat-raised-button><mat-icon>person</mat-icon>
+          Customer
+        </button>
+        <button (click)="team()" mat-raised-button><mat-icon>people</mat-icon>
+          Team
+        </button>
+    </div>
+
+  </mat-drawer>
+
+
+<div class="container mt-5">
+  <router-outlet></router-outlet>
+</div>
+
+<ng-toast />
+<ng-confirm />

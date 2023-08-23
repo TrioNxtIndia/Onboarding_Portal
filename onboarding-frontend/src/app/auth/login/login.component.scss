@@ -1,0 +1,27 @@
+.main {
+    display: flex;
+    justify-content: center;
+    
+    form {
+        padding: 0 15px 0 15px;
+        margin-bottom: 25px;
+
+        button{
+            width: 100%;
+            height: 45px;
+        }
+    }
+}
+
+mat-form-field {
+    width: 100%;
+}
+
+.reg {
+    cursor: pointer;
+}
+.reg:hover {
+    cursor: pointer;
+    color: #3f51b5;
+    font-weight: bold;
+}
